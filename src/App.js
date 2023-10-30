@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import './assets/css/reset.css'
+import './assets/css/style.css'
+
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Main from './components/Main'
+import Slider from './components/Slider'
+import Image from './components/Image'
+import Imagetext from './components/Imagetext'
+import Card from './components/Card'
+import Banner from './components/Banner'
+import Text from './components/Text'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header element="nexon" />
+      <Main>
+        <Slider />
+        <Image element = "section nexon" title="포트폴리오가 실력이다."/>
+        <Imagetext element = "section nexon gray" />
+        <Card element = "section nexon" />
+        <Banner element = "nexon" />
+        <Text element = "section nexon" />
+      </Main>
+      <Footer element="nexon section gray" />
+    </>
   );
 }
 

@@ -1,0 +1,59 @@
+/* fonts */
+@import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+.nexon {
+    font-family: 'NexonLv1Gothic';
+    font-size: 400;
+}
+
+/* reset */
+ * {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, em {
+    font-weight: normal;
+}
+.blind {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+}
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* common */
+.container {
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;     
+    text-align: center;
+}
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #777;
+}
